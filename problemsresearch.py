@@ -1,22 +1,20 @@
 # Problem Solving 1-
 # Task 1- 
-
-# favorite_number = 20
+favorite_number = 20
 
 # Task 2-
 import random
+random_number = random.randint(0,100)
+difference_number = random_number - favorite_number
+print(difference_number)
 
-# favorite_number = 20
-
-random_number = random.randrange(25)
-print(random_number)
 
 # Task 3-
+count = 1
+random_number = random.randint(0,100)
 
-def random_number(favorite_number):
-    if random_number == favorite_number:
-        print(favorite_number)
+while random_number != favorite_number:
+    random_number = random.randint(0,100)
+    count += 1 
 
-favorite_number = 20
-
-print(random_number)    
+print(f"It took the computer {count} guesses to find your favorite number!")
