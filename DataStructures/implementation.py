@@ -73,4 +73,4 @@ imediate_family = [
 ]
 
 for person in imediate_family:
-    print(person['first_name']+ " " + person["relation_to_me"])
+    print(person['first_name']+ " : " + person["relation_to_me"])
